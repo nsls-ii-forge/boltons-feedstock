@@ -4,12 +4,11 @@
 {% set hash = "ae59ff28466caacaa0b55a536d41c37c11192475804bdbfeb076172e80a5c1b1" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: 'boltons-{{ version }}.tar.gz'
-  url: https://github.com/mahmoud/boltons/archive/{{ version }}.tar.gz
+  url: https://github.com/mahmoud/{{ name }}/archive/{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
 build:
@@ -41,8 +40,3 @@ about:
     boltons should be builtins. Boltons is a set of over 160 BSD-licensed,
     pure-Python utilities in the same spirit as--and yet conspicuously
     missing from--the standard library.
-
-extra:
-  recipe-maintainers:
-    - kalefranz
-    - nicoddemus
