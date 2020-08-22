@@ -1,6 +1,6 @@
 {% set name = "boltons" %}
 {% set version = "20.2.1" %}
-{% set hash = "f5b63fba62bed021c5086e43b4cfdaf6c8396a3ae1ccdcb549b4eb2f36f8a794" %}
+{% set sha256 = "f5b63fba62bed021c5086e43b4cfdaf6c8396a3ae1ccdcb549b4eb2f36f8a794" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mahmoud/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ hash }}
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/mahmoud/boltons
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: >
     boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
