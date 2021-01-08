@@ -3,13 +3,11 @@ About boltons
 
 Home: https://github.com/mahmoud/boltons
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/boltons-feedstock/blob/master/LICENSE.txt)
 
 Summary: boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
-
-
 
 
 Current build status
